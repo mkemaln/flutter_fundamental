@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
                   // memberi padding bottom 8
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
-                    'Wisata Gunung di Batu',
+                    'Gunung Panderman di Batu',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
@@ -67,6 +67,14 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Mountain peak & hiking spot with walking trails, lush foliage & scenic panoramas from the summit. By 2241720044',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Muhammad Kemal Nugraha dan 2241720044',
       home: Scaffold(
@@ -74,7 +82,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Flutter layout demo'),
         ),
         body: Column(
-          children: [titleSection, buttonSection],
+          children: [titleSection, buttonSection, textSection],
         ),
       ),
     );
